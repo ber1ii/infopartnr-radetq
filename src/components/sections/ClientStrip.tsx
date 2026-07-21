@@ -14,6 +14,12 @@ export const ClientStrip: React.FC = () => {
 
   return (
     <section className="py-12 overflow-hidden bg-zinc-50 dark:bg-[#09090B] border-y border-zinc-100 dark:border-zinc-900 transition-colors duration-300">
+      <div className="mb-6 text-center">
+        <span className="text-xs sm:text-sm font-semibold uppercase tracking-widest text-emerald-500 dark:text-emerald-400">
+          Trusted by:
+        </span>
+      </div>
+
       <div className="relative flex overflow-x-hidden group">
         <div className="absolute inset-y-0 left-0 w-24 sm:w-32 bg-gradient-to-r from-zinc-50 dark:from-[#09090B] to-transparent z-10 pointer-events-none" />
         <div className="absolute inset-y-0 right-0 w-24 sm:w-32 bg-gradient-to-l from-zinc-50 dark:from-[#09090B] to-transparent z-10 pointer-events-none" />

@@ -20,58 +20,58 @@ export const FunnelMechanism: React.FC = () => {
 
   const funnelSteps: FunnelStep[] = [
     {
-      phase: "STEP 01 / ONBOARDING",
-      title: "Onboarding & Voice Capture",
+      phase: "STEP 01 / STRATEGY",
+      title: "Strategy & Positioning",
       subtitle: "Learning your exact perspective and positioning",
-      description: "We learn your tone, personality, and exactly who your ideal client is — so everything sounds like it's genuinely coming from you.",
+      description: "We work out which part of your market the channel goes after, and what it has to prove before anyone buys. Most of that comes straight off your sales calls, along with every objection we need to kill.",
       mechanic: "Deep-dive founder interview profiling + voice profiling matrix.",
       metricBadge: "Alignment Phase"
     },
     {
-      phase: "STEP 02 / INTENT MINING",
-      title: "Objection Mining",
+      phase: "STEP 02 / RESEARCH",
+      title: "Research & Ideation",
       subtitle: "Handling high-ticket friction before the sales call",
-      description: "We pull the objections that come up on your sales calls and weave them straight into your videos — so they're handled before the call ever happens.",
+      description: "We bring you the ideas. Every one gets picked for the same reason: it puts you in front of someone who could actually become a client.",
       mechanic: "CRM raw data parsing + pipeline resistance mapping.",
       metricBadge: "Objection Neutralization"
     },
     {
-      phase: "STEP 03 / SYNTHESIS",
-      title: "Your AI Second Brain",
+      phase: "STEP 03 / SCRIPTING",
+      title: "Script & Voice Capture",
       subtitle: "Scaling high-fidelity script logic seamlessly",
-      description: "We build an AI model trained on how you think and speak, so every script and idea sounds like you — genuine, never generic.",
+      description: "Every script gets written for you, outline or word for word, whatever works for you the best, also in the way you already speak. Built to hold attention and to sell.",
       mechanic: "Custom LLM persona tuning based exclusively on original asset capture.",
       metricBadge: "100% On-Brand Voice"
     },
     {
-      phase: "STEP 04 / DEMAND CAPTURE",
-      title: "Data-Driven Ideation",
+      phase: "STEP 04 / CONSULTATIONS",
+      title: "Consultations & Optimization",
       subtitle: "Engineering high-retention discovery hooks",
-      description: "Every video is built on proven demand. We find an outlier that's already pulled unusual attention and build your video around it — so it pulls the right traffic.",
+      description: "We're basically always reachable. Every two weeks we get on a call to plan what's coming, look at how the last videos did, and work on your delivery.",
       mechanic: "Outlier extraction + algorithmic demand balancing.",
       metricBadge: "High-Intent Acquisition"
     },
     {
-      phase: "STEP 05 / ARCHITECTURE",
-      title: "Done-for-Your Production",
+      phase: "STEP 05 / EDITING",
+      title: "Editing & Asset Delivery",
       subtitle: "Fulfillment completely removed from your timeline",
-      description: "We write the full script. You record. Then everything is ours: editing, thumbnails, packaging, titles, SEO, scheduling, and quality control.",
+      description: "Every edit supplements your message. The cuts, the pacing, the visuals all exist to make the point land and get someone closer to a sale.",
       mechanic: "End-to-end multi-layer asset delivery pipelines.",
       metricBadge: "1-2 Hours/Week Input"
     },
     {
-      phase: "STEP 06 / OVERLAY",
-      title: "The Funnel Converges",
+      phase: "STEP 06 / THUMBNAILS",
+      title: "Thumbnails & Variants",
       subtitle: "Transforming casual views into focused schedules",
-      description: "Instead of scattering people across a channel, everything funnels toward one video built specifically to turn a viewer into a booked call.",
+      description: "Never just one thumbnail. We run variants against each other on every upload and keep the winner.",
       mechanic: "High-ticket linear routing architecture.",
       metricBadge: "Linear Flow Conversion"
     },
     {
-      phase: "DESTINATION / ASSET",
-      title: "Booked Calls, Pre-Sold",
+      phase: "STEP 07 / POSTING",
+      title: "Posting & Tracking",
       subtitle: "Predictable calendar fulfillment on absolute autopilot",
-      description: "A YouTube sales funnel that runs almost on its own — booking calls with people who already trust you and understand the offer.",
+      description: "We handle the uploads and the SEO side, and track every call and sale back to the video that caused it.",
       mechanic: "Pre-handled buyer intent frames.",
       metricBadge: "Inbound Hyper-Profit"
     }
@@ -144,7 +144,7 @@ export const FunnelMechanism: React.FC = () => {
             </h2>
 
             <p className="text-base text-zinc-500 dark:text-zinc-400 leading-relaxed max-w-sm font-normal">
-              It's not random and it's not guessing. Here's the exact path from onboarding to booked calls — everything but the recording is on us.
+              Here's the exact path from onboarding to booked calls.
             </p>
 
             {/* NEW: mobile/tablet progress indicator. The dot-tracker below is

@@ -6,8 +6,9 @@ export const OfferSection: React.FC = () => {
   const { theme } = useTheme();
 
   const isDark = theme === 'dark';
-  const themeClasses = isDark ? "bg-[#0A0A0A] text-white" : "bg-white text-black";
-  const cardClasses = isDark ? "bg-zinc-900 border-zinc-800" : "bg-zinc-50 border-zinc-200";
+  // Invert like WhyDifferent: dark mode = white bg, light mode = dark bg
+  const themeClasses = isDark ? "bg-white text-black" : "bg-[#0A0A0A] text-white";
+  const cardClasses = isDark ? "bg-zinc-50 border-zinc-200" : "bg-zinc-900 border-zinc-800";
 
   const offers = [
     { title: "Performance only on new sales", desc: "The percentage applies only to new sales you weren't making before — money coming in directly from our work." },

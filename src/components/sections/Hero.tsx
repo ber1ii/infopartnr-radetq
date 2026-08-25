@@ -1,14 +1,17 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React from "react";
+import { motion } from "framer-motion";
 
 const TYPEFORM_URL = "https://form.typeform.com/to/ydHXfyR7";
 
 export const Hero: React.FC = () => {
-  const handleScrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
+  const handleScrollToSection = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    targetId: string,
+  ) => {
     e.preventDefault();
     const target = document.getElementById(targetId);
     if (target) {
-      target.scrollIntoView({ behavior: 'smooth' });
+      target.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -25,8 +28,12 @@ export const Hero: React.FC = () => {
           aria-hidden="true"
         >
           <div className="flex items-center justify-between mb-1.5 px-0.5">
-            <span className="text-[10px] font-mono text-zinc-400 dark:text-zinc-600 tabular-nums">0:00</span>
-            <span className="text-[10px] font-mono text-zinc-400 dark:text-zinc-600 tabular-nums">LIVE</span>
+            <span className="text-[10px] font-mono text-zinc-400 dark:text-zinc-600 tabular-nums">
+              0:00
+            </span>
+            <span className="text-[10px] font-mono text-zinc-400 dark:text-zinc-600 tabular-nums">
+              LIVE
+            </span>
           </div>
           <div className="relative h-4">
             <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 h-px bg-zinc-200 dark:bg-zinc-800" />
@@ -52,12 +59,17 @@ export const Hero: React.FC = () => {
           transition={{ duration: 1.0, ease: [0.16, 1, 0.3, 1] }}
         >
           <h1 className="display-lg text-zinc-900 dark:text-white">
-            Own your industry on YouTube and turn organic views into <br className="hidden sm:inline" />
-            <span className="text-blue-400 dark:text-blue-500">high-ticket clients</span> on autopilot.
+            Own your industry on YouTube and turn organic views into{" "}
+            <br className="hidden sm:inline" />
+            <span className="text-blue-400 dark:text-blue-500">
+              high-ticket clients
+            </span>{" "}
+            on autopilot.
           </h1>
 
           <p className="mx-auto mt-6 max-w-2xl text-base sm:text-lg text-zinc-500 dark:text-zinc-400 leading-relaxed font-normal">
-            The done-for-you system that turns the platform your buyers already check into your most predictable revenue channel.
+            Strategy, scripts, editing, packaging - we do all of it. You just
+            show up, record and collect cash.
           </p>
         </motion.div>
 
@@ -75,14 +87,24 @@ export const Hero: React.FC = () => {
               className="grad-blue group relative flex items-center justify-center gap-3 rounded-full px-8 py-4 font-sans text-base font-medium text-white shadow-[0_16px_32px_-12px_rgba(77,101,255,0.65)] hover:shadow-[0_16px_32px_-6px_rgba(77,101,255,0.85)] transition-all duration-300 hover:-translate-y-0.5"
             >
               Book a Strategy Call
-              <svg className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-0.5" viewBox="0 0 16 16" fill="none">
-                <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+              <svg
+                className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-0.5"
+                viewBox="0 0 16 16"
+                fill="none"
+              >
+                <path
+                  d="M3 8h10M9 4l4 4-4 4"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
               </svg>
             </a>
 
             <a
               href="#funnel"
-              onClick={(e) => handleScrollToSection(e, 'funnel')}
+              onClick={(e) => handleScrollToSection(e, "funnel")}
               className="group flex items-center justify-center gap-2 rounded-full border border-zinc-200 dark:border-zinc-800 px-6 py-4 font-sans text-base font-medium text-zinc-600 dark:text-zinc-300 bg-zinc-50/50 dark:bg-zinc-900/30 hover:bg-zinc-100 dark:hover:bg-zinc-900/80 transition-all duration-200"
             >
               See how it works

@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const TYPEFORM_URL = "https://form.typeform.com/to/ydHXfyR7";
+const TYPEFORM_URL = "https://calendly.com/dusan-infopartnr/45min";
 
 export const Hero: React.FC = () => {
   const handleScrollToSection = (

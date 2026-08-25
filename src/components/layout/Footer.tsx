@@ -29,7 +29,7 @@ export const Footer: React.FC = () => {
           © 2026 Infopartnr. Done-for-you YouTube growth.
         </p>
         <a
-          href="https://form.typeform.com/to/ydHXfyR7"
+          href="https://calendly.com/dusan-infopartnr/45min"
           target="_blank"
           rel="noopener noreferrer"
           className="text-sm font-medium text-zinc-500 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-white transition-colors"

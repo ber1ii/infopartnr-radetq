@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useTheme } from '../../context/ThemeContext';
 
-const TYPEFORM_URL = "https://form.typeform.com/to/ydHXfyR7";
+const TYPEFORM_URL = "https://calendly.com/dusan-infopartnr/45min";
 
 export const CTASection: React.FC = () => {
   const { theme } = useTheme();

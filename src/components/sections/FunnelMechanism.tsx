@@ -25,7 +25,7 @@ export const FunnelMechanism: React.FC = () => {
       subtitle: "Learning your exact perspective and positioning",
       description: "We work out which part of your market the channel goes after, and what it has to prove before anyone buys. Most of that comes straight off your sales calls, along with every objection we need to kill.",
       mechanic: "Deep-dive founder interview profiling + voice profiling matrix.",
-      metricBadge: "Alignment Phase"
+      metricBadge: "Positioning Clarity"
     },
     {
       phase: "STEP 02 / RESEARCH",
@@ -33,7 +33,7 @@ export const FunnelMechanism: React.FC = () => {
       subtitle: "Handling high-ticket friction before the sales call",
       description: "We bring you the ideas. Every one gets picked for the same reason: it puts you in front of someone who could actually become a client.",
       mechanic: "CRM raw data parsing + pipeline resistance mapping.",
-      metricBadge: "Objection Neutralization"
+      metricBadge: "Research Velocity"
     },
     {
       phase: "STEP 03 / SCRIPTING",
@@ -41,7 +41,7 @@ export const FunnelMechanism: React.FC = () => {
       subtitle: "Scaling high-fidelity script logic seamlessly",
       description: "Every script gets written for you, outline or word for word, whatever works for you the best, also in the way you already speak. Built to hold attention and to sell.",
       mechanic: "Custom LLM persona tuning based exclusively on original asset capture.",
-      metricBadge: "100% On-Brand Voice"
+      metricBadge: "Script Fidelity"
     },
     {
       phase: "STEP 04 / CONSULTATIONS",
@@ -49,7 +49,7 @@ export const FunnelMechanism: React.FC = () => {
       subtitle: "Engineering high-retention discovery hooks",
       description: "We're basically always reachable. Every two weeks we get on a call to plan what's coming, look at how the last videos did, and work on your delivery.",
       mechanic: "Outlier extraction + algorithmic demand balancing.",
-      metricBadge: "High-Intent Acquisition"
+      metricBadge: "Always-On Optimization"
     },
     {
       phase: "STEP 05 / EDITING",
@@ -57,7 +57,7 @@ export const FunnelMechanism: React.FC = () => {
       subtitle: "Fulfillment completely removed from your timeline",
       description: "Every edit supplements your message. The cuts, the pacing, the visuals all exist to make the point land and get someone closer to a sale.",
       mechanic: "End-to-end multi-layer asset delivery pipelines.",
-      metricBadge: "1-2 Hours/Week Input"
+      metricBadge: "Editing Velocity"
     },
     {
       phase: "STEP 06 / THUMBNAILS",
@@ -65,7 +65,7 @@ export const FunnelMechanism: React.FC = () => {
       subtitle: "Transforming casual views into focused schedules",
       description: "Never just one thumbnail. We run variants against each other on every upload and keep the winner.",
       mechanic: "High-ticket linear routing architecture.",
-      metricBadge: "Linear Flow Conversion"
+      metricBadge: "Targeted Click-Through"
     },
     {
       phase: "STEP 07 / POSTING",
@@ -73,7 +73,7 @@ export const FunnelMechanism: React.FC = () => {
       subtitle: "Predictable calendar fulfillment on absolute autopilot",
       description: "We handle the uploads and the SEO side, and track every call and sale back to the video that caused it.",
       mechanic: "Pre-handled buyer intent frames.",
-      metricBadge: "Inbound Hyper-Profit"
+      metricBadge: "Predictable Calendar Fulfillment"
     }
   ];
 
@@ -267,7 +267,6 @@ export const FunnelMechanism: React.FC = () => {
                         <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
                       </svg>
                       <span>
-                        <span className="text-zinc-700 dark:text-zinc-300 font-medium">Under the hood:</span> {step.mechanic}
                       </span>
                     </div>
                   </div>

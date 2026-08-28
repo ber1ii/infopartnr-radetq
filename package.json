@@ -12,6 +12,7 @@
   "dependencies": {
     "@react-three/fiber": "^9.6.1",
     "@tailwindcss/vite": "^4.3.2",
+    "@vercel/analytics": "^2.0.1",
     "framer-motion": "^12.42.0",
     "lucide-react": "^1.22.0",
     "react": "^19.2.7",

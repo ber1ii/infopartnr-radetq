@@ -10,6 +10,7 @@ import { OfferSection } from "./components/sections/Offer";
 import { FAQ } from "./components/sections/FAQ";
 import { CTASection } from "./components/sections/CTASection";
 import { ROICalculator } from "./components/sections/ROICalculator";
+import { Analytics } from "@vercel/analytics/react"
 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
 
         <Footer />
       </div>
+      <Analytics />
     </ThemeProvider>
   );
 }

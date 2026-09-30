@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useTheme } from "../../context/ThemeContext";
 
 const TYPEFORM_URL = "https://calendly.com/dusan-infopartnr/45min";
+const FLOW_URL = "https://flow.infopartnr.co";
 
 export const Navbar: React.FC = () => {
   const { theme, toggleTheme } = useTheme();
@@ -42,13 +43,13 @@ export const Navbar: React.FC = () => {
           >
             {/* Light mode rendering */}
             <img
-              src="/assets/logo/logo-black.png"
+              src="/assets/logo/infopartnr.svg"
               alt="Infopartnr Logo"
               className="h-7 w-auto block dark:hidden"
             />
             {/* Dark mode rendering */}
             <img
-              src="/assets/logo/logo-white.png"
+              src="/assets/logo/infopartnr-white.svg"
               alt="Infopartnr Logo"
               className="h-7 w-auto hidden dark:block"
             />
@@ -91,6 +92,7 @@ export const Navbar: React.FC = () => {
 
           {/* CTA + Light/Dark Controls */}
           <div className="flex items-center gap-3">
+            {/* Theme Toggle Switch */}
             <button
               onClick={toggleTheme}
               className="inline-flex h-9 w-9 cursor-pointer items-center justify-center rounded-full border border-zinc-200 dark:border-zinc-800 text-zinc-500 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-900 transition-all"
@@ -126,6 +128,30 @@ export const Navbar: React.FC = () => {
                 </svg>
               )}
             </button>
+
+            {/* Flow Button */}
+            <a
+              href={FLOW_URL}
+              target="_blank"
+              rel="noreferrer"
+              className="hidden sm:inline-flex items-center gap-1.5 rounded-full border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900/60 px-3.5 py-2 text-xs font-medium text-zinc-800 dark:text-zinc-200 hover:border-zinc-300 dark:hover:border-zinc-700 transition-all"
+            >
+              Flow
+              <svg
+                className="h-3 w-3 opacity-60"
+                viewBox="0 0 16 16"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M4.5 11.5l7-7m0 0H5.5m6 0v6"
+                  stroke="currentColor"
+                  strokeWidth="1.6"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </a>
 
             {/* Desktop Typeform Link */}
             <a
@@ -228,13 +254,24 @@ export const Navbar: React.FC = () => {
                 FAQ
               </a>
 
+              {/* Mobile Flow Link */}
+              <a
+                href={FLOW_URL}
+                target="_blank"
+                rel="noreferrer"
+                onClick={() => setMobileMenuOpen(false)}
+                className="block rounded-2xl px-4 py-3 text-center text-sm font-medium text-zinc-800 dark:text-zinc-200 border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900/50 mt-1"
+              >
+                Launch Flow ↗
+              </a>
+
               {/* Mobile Typeform Link */}
               <a
                 href={TYPEFORM_URL}
                 target="_blank"
                 rel="noreferrer"
                 onClick={() => setMobileMenuOpen(false)}
-                className="grad-blue mt-1 block rounded-2xl px-4 py-3 text-center text-sm font-medium text-white"
+                className="grad-blue mt-2 block rounded-2xl px-4 py-3 text-center text-sm font-medium text-white"
               >
                 Book a Call
               </a>

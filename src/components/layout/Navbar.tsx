@@ -136,7 +136,7 @@ export const Navbar: React.FC = () => {
               rel="noreferrer"
               className="hidden cursor-pointer items-center gap-2 rounded-full border border-white/20 bg-white/10 px-5 py-2.5 text-sm font-medium text-white backdrop-blur-md transition-all duration-200 hover:-translate-y-0.5 hover:border-white/40 hover:bg-white/20 md:inline-flex"
             >
-              Flow
+              Log in
               <svg
                 className="h-3.5 w-3.5 opacity-80"
                 viewBox="0 0 16 16"

@@ -129,16 +129,16 @@ export const Navbar: React.FC = () => {
               )}
             </button>
 
-            {/* Flow Button */}
+            {/* Flow Button - Frosted Glass White */}
             <a
               href={FLOW_URL}
               target="_blank"
               rel="noreferrer"
-              className="hidden sm:inline-flex items-center gap-1.5 rounded-full border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900/60 px-3.5 py-2 text-xs font-medium text-zinc-800 dark:text-zinc-200 hover:border-zinc-300 dark:hover:border-zinc-700 transition-all"
+              className="hidden cursor-pointer items-center gap-2 rounded-full border border-white/20 bg-white/10 px-5 py-2.5 text-sm font-medium text-white backdrop-blur-md transition-all duration-200 hover:-translate-y-0.5 hover:border-white/40 hover:bg-white/20 md:inline-flex"
             >
               Flow
               <svg
-                className="h-3 w-3 opacity-60"
+                className="h-3.5 w-3.5 opacity-80"
                 viewBox="0 0 16 16"
                 fill="none"
                 aria-hidden="true"
@@ -260,7 +260,7 @@ export const Navbar: React.FC = () => {
                 target="_blank"
                 rel="noreferrer"
                 onClick={() => setMobileMenuOpen(false)}
-                className="block rounded-2xl px-4 py-3 text-center text-sm font-medium text-zinc-800 dark:text-zinc-200 border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900/50 mt-1"
+                className="mt-1 block rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 px-4 py-3 text-center text-sm font-medium text-zinc-800 dark:text-zinc-200"
               >
                 Launch Flow ↗
               </a>
